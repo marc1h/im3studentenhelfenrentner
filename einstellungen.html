@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <title>Einstellungen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+     <header>
+        <div class="container-header">
+            <a href = "marktplatz.html"><h1>Studenten helfen Rentner</h1></a>
+            <a href = "marktplatz.html"><img src="img/logo.png" alt="Logo" width="60px" height="60px" ></a>
+        </div>
+
+       <nav> 
+        <ul>
+            <li class="dropdown">
+             <a href="javascript:void(0)" class="dropbtn">Mein Profil</a>
+             <div class="dropdown-content">
+               <a href="/inserat.html">Mein Inserat</a>
+               <a href="/persoenlichedaten.html">Persönliche Daten</a>
+               <a href="/einstellungen.html">Einstellungen</a>
+               <a href="/index.html" onclick="logout()">Abmelden</a>
+           <li><a href="/kontaktierteinserate.html">Kontaktierte Inserate</a></li>
+           <li><a href="/marktplatz.html">Marktplatz Inserate</a></li>
+          
+             </div>
+           </li>
+         </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2>Einstellungen</h2><br><br>
+
+    
+        <label for="sprache"><b>Sprache</b></label> <br>
+        <select class="einstellungen" name="sprache" id="sprache" >
+            <option value="1">Deutsch</option>
+            <option value="2">Englisch</option>
+            <option value="3">Französisch</option>
+            <option value="4">Italienisch</option>
+            </select> <br><br>
+
+            <label for="Zeitzone"><b>Zeitzone</b></label> <br>
+            <select class="einstellungen" name="zeitzone" id="zeitzone" >
+                <option value="1">Mittel-Europäische Zeit (CET) +1</option>
+                <option value="2">Ost-Europäische Zeit (EET) +2</option>
+                <option value="3">Mittlere Greenwich Zeit (GMT) +0</option>
+                </select> <br><br>
+
+            <label for="Erscheinungsbild"><b>Erscheinungsbild</b></label> <br>
+            <select class="einstellungen" name="erscheinungsbild" id="erscheinungsbild" >
+                <option value="1">helles Design</option>
+                <option value="2">dunkles Design</option>
+                </select> <br><br><br>
+            
+        
+    
+        <button>Speichern</button>
+
+    </main>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section-adresse"> 
+                <br><br>
+                <p><b>Studenten helfen Rentner GmbH</b></p>
+                <p>Dorfstrasse 8</p>
+                <p>7000 Chur</p>
+            </div> 
+            <div class="footer-section-kontakt"> 
+                <br><br><p><b>Kontakt</b></p> 
+                <p><a href="mailto:info@studentenhelfenrentner.ch">info@studentenhelfenrentner.ch</a></p>
+                <p>+41 71 123 45 67</p>
+            </div>  
+            <div class="footer-section-socialmedia"> 
+                <br><br><p><b>Folge uns</b></p> 
+                <p>und bleibe auf dem Laufenden</p>
+                <img src="img/linkedin.png" alt="Linkedin" width="20px" >
+                <img src="img/youtube.png" alt="YouTube" width="30px" >
+                <img src="img/facebook.png" alt="Facebook" width="20px" >
+                <img src="img/instagram.png" alt="Instagram" width="20px" >
+                
+            </div>  
+ 
+        <div class="footer-bottom">
+            <p>® Studenten helfen Rentner</p> <br>
+        </div> 
+    </div>  
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

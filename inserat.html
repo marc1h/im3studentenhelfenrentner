@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <title>Mein Inserat</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-header">
+            <a href = "marktplatz.html"><h1>Studenten helfen Rentner</h1></a>
+            <a href = "marktplatz.html"><img src="img/logo.png" alt="Logo" width="60px" height="60px" ></a>
+        </div>
+
+       <nav> 
+        <ul>
+            <li class="dropdown">
+             <a href="javascript:void(0)" class="dropbtn">Mein Profil</a>
+             <div class="dropdown-content">
+               <a href="/inserat.html">Mein Inserat</a>
+               <a href="/persoenlichedaten.html">Persönliche Daten</a>
+               <a href="/einstellungen.html">Einstellungen</a>
+               <a href="/index.html" onclick="logout()">Abmelden</a>
+           <li><a href="/kontaktierteinserate.html">Kontaktierte Inserate</a></li>
+           <li><a href="/marktplatz.html">Marktplatz Inserate</a></li>
+          
+             </div>
+           </li>
+         </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        
+    <h2>Mein Inserat</h2>
+    <p id="infoText"> </p>
+
+
+    <div id="meinInserat">
+
+        <input type="radio" id="suche" name="aktion" value="0">
+        <label for="suche"><b>Ich suche</b>&emsp; &emsp; </label> 
+        <input type="radio" id="biete_an" name="aktion" value="1">
+        <label for="biete_an"><b>Ich biete an</b></label><br><br>
+        
+        <label for="thema"><b>Thema</b></label> <br>
+        <input id="thema" type="text" value=""> <br><br>
+
+        <label for="kurzbeschrieb"><b>Kurzbeschrieb</b></label> <br>
+        <textarea id="kurzbeschrieb" name="kurzbeschrieb"></textarea> <br>
+
+
+        <label for="kanton"><b>Kanton</b></label> <br>
+        <select class="dropdown" name="kanton" id="kanton">
+            <option value="1">Aargau</option>
+            <option value="2">Appenzell Ausserhoden</option>
+            <option value="3">Appenzell Innerhoden</option>
+            <option value="4">Basel-Landschaft</option>
+            <option value="5">Basel-Stadt</option>
+            <option value="6">Bern</option>
+            <option value="7">Freiburg</option>
+            <option value="8">Genf</option>
+            <option value="9">Glarus</option>
+            <option value="10">Graubünden</option>
+            <option value="11">Jura</option>
+            <option value="12">Luzern</option>
+            <option value="13">Neuenburg</option>
+            <option value="14">Nidwalden</option>
+            <option value="15">Obwalden</option>
+            <option value="16">St.Gallen</option>
+            <option value="17">Schaffhausen</option>
+            <option value="18">Schwyz</option>
+            <option value="19">Solothurn</option>
+            <option value="20">Tessin</option>
+            <option value="21">Thurgau</option>
+            <option value="22">Uri</option>
+            <option value="23">Waadt</option>
+            <option value="24">Wallis</option>
+            <option value="25">Zürich</option>
+            <option value="26">Zug</option>
+        </select> <br> <br>
+
+
+        <label for="wochentage"><b>Wochentage</b></label> <br>
+        <div id="wochentage" class="flex"></div> <br> <br>
+
+        <label for="zeit"><b>Gewünschte Zeit</b></label> <br>
+        <input id="zeit" placeholder="Bsp. 12.00 - 18.00 Uhr" type="text" value=""> <br><br>
+
+        <label for="preis"><b>Preisvorschlag</b></label> <br>
+        <input id="preis" placeholder="Bsp. CHF 25.00/h"type="text" value=""> <br><br>
+    
+
+
+        <button class="hidden" id="button-veroeffentlichen" onclick="neuesInserat()" >Veröffentlichen</button>
+        <button class="hidden" id="button-aktualisieren" onclick="aktualisiereInserat()">Aktualisieren</button>
+        <button class="hidden" id="button-loeschen" onclick="loescheInserat()">Löschen</button>
+
+        <p id="nachricht"> </p>
+
+    </div>
+</main>
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section-adresse"> 
+            <br><br>
+            <p><b>Studenten helfen Rentner GmbH</b></p>
+            <p>Dorfstrasse 8</p>
+            <p>7000 Chur</p>
+        </div> 
+        <div class="footer-section-kontakt"> 
+            <br><br><p><b>Kontakt</b></p> 
+            <p><a href="mailto:info@studentenhelfenrentner.ch">info@studentenhelfenrentner.ch</a></p>
+            <p>+41 71 123 45 67</p>
+        </div>  
+        <div class="footer-section-socialmedia"> 
+            <br><br><p><b>Folge uns</b></p> 
+            <p>und bleibe auf dem Laufenden</p>
+            <img src="img/linkedin.png" alt="Linkedin" width="20px" >
+            <img src="img/youtube.png" alt="YouTube" width="30px" >
+            <img src="img/facebook.png" alt="Facebook" width="20px" >
+            <img src="img/instagram.png" alt="Instagram" width="20px" >
+            
+        </div>  
+
+    <div class="footer-bottom">
+        <p>® Studenten helfen Rentner</p> <br>
+    </div> 
+</div>  
+
+    <script src="js/inserat.js"></script>
+
+</body>
+
+</html>

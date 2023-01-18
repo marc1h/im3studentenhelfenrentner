@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <title>Kontaktierte Inserate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container-header">
+            <a href = "marktplatz.html"><h1>Studenten helfen Rentner</h1></a>
+            <a href = "marktplatz.html"><img src="img/logo.png" alt="Logo" width="60px" height="60px" ></a>
+        </div>
+
+       <nav> 
+        <ul>
+            <li class="dropdown">
+             <a href="javascript:void(0)" class="dropbtn">Mein Profil</a>
+             <div class="dropdown-content">
+               <a href="/inserat.html">Mein Inserat</a>
+               <a href="/persoenlichedaten.html">Persönliche Daten</a>
+               <a href="/einstellungen.html">Einstellungen</a>
+               <a href="/index.html" onclick="logout()">Abmelden</a>
+           <li><a href="/kontaktierteinserate.html">Kontaktierte Inserate</a></li>
+           <li><a href="/marktplatz.html">Marktplatz Inserate</a></li>
+          
+             </div>
+           </li>
+         </ul>
+        </nav>
+
+    </header>
+    
+    <main>
+        <h2>Kontaktierte Inserate</h2> <br><br><br>
+
+        <div class="allenachrichten">
+            
+            <div class="suchfeld">
+                <input name="suchen" placeholder="Suchen" />
+                <div class="actions-dropdown">
+
+            <div class="nachrichtenart">
+              <button class="active">Eingang</button>
+              <button >Gesendet</button>
+            </div>
+           
+    
+            </div class="eingang" >
+              
+              <div class="nachricht">
+                <span class="sender">Gartenarbeiten</span>
+                <span class="datum">Heute</span>
+                <span class="betreff">Ich bin interessiert an ...</span>
+              </div>
+
+              <div class="nachricht">
+                <span class="sender">Babysitting</span>
+                <span class="datum">Vorgester</span>
+                <span class="betreff">Guten Tag Ich bin ... </span>
+              </div>
+
+              <div class="nachricht">
+                <span class="sender">Computer einrichten</span>
+                <span class="datum">12.01.2023</span>
+                <span class="betreff">14.00 Uhr passt für ...</span>
+              </div>
+
+              <div class="nachricht">
+                <span class="sender">Haare schneiden</span>
+                <span class="datum">05.01.2023</span>
+                <span class="betreff">Vielen Dank. Somit ...</span>
+              </div>
+
+              <div class="nachricht">
+                <span class="sender">Rasen mähen</span>
+                <span class="datum">16.12.2022</span>
+                <span class="betreff">Super, machen wir ...</span>
+              </div>
+              
+
+
+          </div>
+
+    </main>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section-adresse"> 
+                <br><br>
+                <p><b>Studenten helfen Rentner GmbH</b></p>
+                <p>Dorfstrasse 8</p>
+                <p>7000 Chur</p>
+            </div> 
+            <div class="footer-section-kontakt"> 
+                <br><br><p><b>Kontakt</b></p> 
+                <p><a href="mailto:info@studentenhelfenrentner.ch">info@studentenhelfenrentner.ch</a></p>
+                <p>+41 71 123 45 67</p>
+            </div>  
+            <div class="footer-section-socialmedia"> 
+                <br><br><p><b>Folge uns</b></p> 
+                <p>und bleibe auf dem Laufenden</p>
+                <img src="img/linkedin.png" alt="Linkedin" width="20px" >
+                <img src="img/youtube.png" alt="YouTube" width="30px" >
+                <img src="img/facebook.png" alt="Facebook" width="20px" >
+                <img src="img/instagram.png" alt="Instagram" width="20px" >
+                
+            </div>  
+ 
+        <div class="footer-bottom">
+            <p>® Studenten helfen Rentner</p> <br>
+        </div> 
+    </div>  
+
+    <script src="js/script.js"></script>
+</body>
+</html>

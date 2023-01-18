@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <title>Registrieren</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+<body>
+    
+    <header>
+        <div class="container-header">
+            <h1>Studenten helfen Rentner</h1>
+            <img src="img/logo.png" alt="Logo" width="60px" height="60px" >
+        </div>
+
+
+    </header>
+     
+    <main>
+        <h2>Registrieren</h2>
+        <p>Bitte füllen Sie alle untenstehenden Felder aus, um sich bei Studenten helfen Rentner zu registrieren.</p><br><br>
+
+
+        <label for=""><b>Sind Sie Student oder Rentner?</b></label> <br>
+        <form>
+         <div class="funktion">
+                <input type="radio" id="student" name="funktion" value="0">
+                <label for="student">Student&emsp;  </label>
+                <input type="radio" id="rentner" name="funktion" value="1">
+                <label for="rentner">Rentner</label>
+               </div>
+        </form>
+        
+        <div class="container">
+        <div class="container-links">
+            <label for=""><b>Vorname</b></label> <br>
+            <input type="text" id="vorname">  <br><br>
+
+            <label for=""><b>Nachname</b></label> <br>
+            <input type="text" id="nachname">  <br><br>
+
+            <label for=""><b>Strasse</b></label> <br>
+            <input type="text" id="strasse"> <br><br>
+
+            <label for=""><b>Postleitzahl</b></label> <br>
+            <input type="text" id="plz"> <br><br>
+
+            <label for=""><b>Ort</b></label> <br>
+            <input type="text" id="ort"> <br><br>
+
+        </div>
+        <div class="container-rechts">
+
+
+
+            <label for=""><b>E-Mail Adresse</b></label> <br>
+            <input type="email" id="email"> <br><br>
+
+            <label for=""><b>Passwort</b></label> <br>
+            <input type="password" id="password"> <br><br>
+
+            <label for=""><b>Geburtsdatum</b></label> <br>
+            <input type="date" id="geburtsdatum"> <br><br>
+
+            <label for=""><b>Bankverbindung</b></label> <br>
+            <input type="text" placeholder="CHXXXXXXXXXXXXXXX" id="bankverbindung"> <br><br>
+
+
+        </div>
+        </div>
+
+        <button type="submit" name="submit" onclick="registrieren()">Registrieren</button>
+
+        <p id="nachricht"> </p>
+    </main>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section-adresse"> 
+                <br><br>
+                <p><b>Studenten helfen Rentner GmbH</b></p>
+                <p>Dorfstrasse 8</p>
+                <p>7000 Chur</p>
+            </div> 
+            <div class="footer-section-kontakt"> 
+                <br><br><p><b>Kontakt</b></p> 
+                <p><a href="mailto:info@studentenhelfenrentner.ch">info@studentenhelfenrentner.ch</a></p>
+                <p>+41 71 123 45 67</p>
+            </div>  
+            <div class="footer-section-socialmedia"> 
+                <br><br><p><b>Folge uns</b></p> 
+                <p>und bleibe auf dem Laufenden</p>
+                <img src="img/linkedin.png" alt="Linkedin" width="20px" >
+                <img src="img/youtube.png" alt="YouTube" width="30px" >
+                <img src="img/facebook.png" alt="Facebook" width="20px" >
+                <img src="img/instagram.png" alt="Instagram" width="20px" >
+                
+            </div>  
+    
+        <div class="footer-bottom">
+            <p>® Studenten helfen Rentner</p> <br>
+        </div> 
+    </div> 
+    
+    <script src="js/registrieren.js"></script>
+</body>
+</html>
